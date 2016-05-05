@@ -29,4 +29,5 @@ To run a single experiment, execute the following command with appropriate argum
 
 $ java -jar target/marrt-1.0-SNAPSHOT-jar-with-dependencies.jar none default bmarrt random 20 20 10 0.8 0.1 0.8 5513 true 5000
 
+This command will run the class cz.agents.deconfliction.creator.MultiAgentScenarioCreator and passes the above arguments to it. 
 To understand the meaning of the individual arguments, please consult the source code.
