@@ -1,0 +1,32 @@
+This repository contains implementation of MA-RRT* as described in papers:
+
+M. Čáp, P. Novák, J. Vokřínek, and M. Pěchouček, “Multi-agent RRT*: sampling-based cooperative pathfinding,” in Autonomous robots and multirobot systems workshop at AAMAS 2013, 2013. 
+
+and
+
+M. Čáp, P. Novák, J. Vokřínek, and M. Pěchouček, “Multi-agent RRT*: sampling-based cooperative pathfinding (extended abstract),” in Proceedings of the 12th international conference on autonomous agents and multiagent systems, AAMAS’13, 2013.
+
+Dependencies:
+----------
+
+You will need:
+* JDK 1.7 or higher
+* Maven
+
+Compiling:
+----------
+
+The dependencies are managed using Maven. To build the project run the following command in the root of the repository: 
+
+$ mvn package
+
+Then, the compiled sources together with all dependencies will be generated in jar archive target/marrt-1.0-SNAPSHOT-jar-with-dependencies.jar.
+
+Running:
+--------
+
+To run a single experiment, execute the following command with appropriate arguments. For example:
+
+$ java -jar target/marrt-1.0-SNAPSHOT-jar-with-dependencies.jar none default bmarrt random 20 20 10 0.8 0.1 0.8 5513 true 5000
+
+To understand the meaning of the individual arguments, please consult the source code.
